@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 while ((len = in.read(buf)) > 0) {
                     archivo.write(buf, 0, len);
                 }
+                Toast.makeText(this,"Archivo Guardado Correctamente",Toast.LENGTH_SHORT).show();
             }catch (IOException e)
             {
                 Toast.makeText(this,"Problemas en la grabación",Toast.LENGTH_SHORT).show();
